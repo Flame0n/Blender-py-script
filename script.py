@@ -28,8 +28,6 @@ if __name__ == "__main__":
 
     # Set threads mode
     scene.render.threads_mode = 'AUTO'
-    
-    scene.cycles.device = 'GPU'
 
     # Set file format
     scene.render.image_settings.file_format = get_output_file_format()
@@ -37,8 +35,11 @@ if __name__ == "__main__":
     # Set render resolution
     scene.render.resolution_percentage = get_resolution_percentage()
 
+    scene.render.resolution_x = 1920
+    scene.render.resolution_y = 1080
+
     # Set number of samples
-    scene.cycles.samples = get_num_samples()
+    scene.rpr.limits.max_samples = get_num_samples()
 
     # Set output file name
     FILE_NAME = get_output_file_name()
