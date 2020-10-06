@@ -1,4 +1,4 @@
-Для выполнения скрипта на Win10 нужно добавить blender в PATH.
+Для выполнения скрипта на Win10, нужно добавить blender в PATH.
 
 Запуск скрипта: 
 	 python begin.py -- <blend file> <output filename> <output file format> <resolution percentage> <number of samples>
